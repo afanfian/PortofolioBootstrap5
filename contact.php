@@ -1,16 +1,16 @@
 <?php
-$name = $_POST['name'];
-$email= $_POST['email'];
-$subject= $_POST['subject'];
-$message= $_POST['message'];
-$to = "afanfian14@mail.com";
-$subject = "Mail From Fian";
-$txt ="Name = ". $name . "\r\nEmail = " . $email . "\r\nSubject =" . $subject . "\r\nMessage =" . $message;
-$headers = "From: noreply@yoursite.com" . "\r\n" .
-"CC: somebodyelse@example.com";
-if($email!=NULL){
-    mail($to,$subject,$txt,$headers);
+if(isset($_POST['submit'])){
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $subject = $_POST['subject'];
+    $message = $_POST['message '];
+
+    $mailTo = "afanfian14@gmail.com";
+    $headers = "Form: ".$mailFrom;
+    $txt = "You have received an e-mail Form ".$name.".\n\n".$message;
+
+    mail($mailTo, $subject, $txt, $headers);
+    header("Location: index.html?maillsend");
 }
-//redirect
-header("Location:thankyou.html");
+
 ?>
