@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>PORTOFOLIO</title>
+    <title>Fian Awamiry Maulana's Portofolio</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
      <!--Awal AOS sebelum css kita-->
@@ -67,18 +67,19 @@
     <section class="Home py-5" id="Home">
       <div class="container-lg py-4" >
         <div class="row min-vh-100 align-item-center align-content-center">
-          <div class="col-md-6 mt-5 mt-md-0" data-aos="fade-down" data-aos-duration="1000">
+          <div class="col-md-4 mt-5 mt-md-0" data-aos="fade-down" data-aos-duration="1000">
             <div clas="home-img text-center">
               <img class="tengah" src="img1/Fotoprofil.png" width="150" alt="Profi img" />
             </div>
           </div>
-          <div class="col-md-6 mt-5 mt-md-0 order-md-first">
+          <div class="col-md mt-5 mt-md-0 order-md-first">
             <!--order-md-first Mengubah foto dari kkanan ke  kiri-->
             <div class="home-text">
-              <p class="lead" class="fw bold"></p>
-              <h1 class="lead1"></h1>
-              <h2 class="lead2"></h2>
-              <p class="lead3 " class="fw bold"></p>
+              <h3 class="lead1"></h3>
+              <h4 class="lead2"></h4>
+              <p class="lead3" fs-bold></p>
+              <button onclick="myFunction()" id="myBtn" class="button button1">Read more</button>
+              <br>
               <a href="https://linktr.ee/afanfiann" class="btn btn-success px-3 mt-3">My Work</a>
             </div>
           </div>
@@ -261,7 +262,7 @@
                 <i class="fas fa-school"></i>
                 <!--Icon-->
               </div>
-              <h3 class="fs-5 py-2">Institute Teknologi Sepuluh Nopember, Surabaya (ITS)</h3>
+              <h3 class="fs-5 py-2">Institut Teknologi Sepuluh Nopember, Surabaya (ITS)</h3>
               <p class="text-muted">2020 - Present</p>
             </div>
           </div>
@@ -458,6 +459,7 @@
     </section>
     <!--Akhir Contact-->
     <!--Awal animasi-->
+
     <!--Akhir animasi-->
      <!--Awal Footer-->
       <div class="footer border-top py-4">
@@ -481,10 +483,9 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/TextPlugin.min.js"></script>
    <script>
      gsap.registerPlugin(TextPlugin);
-     gsap.to('.lead', {duration: 2, delay: 1.5, text:'Hello Im'})
-     gsap.to('.lead1', {duration: 2, delay: 3, text:'Fian Awamiry Maulana'})
-     gsap.to('.lead2', {duration: 2, delay: 5, text:'Web Developer'})
-     gsap.to('.lead3', {duration: 2, delay: 7, text:'From the Department of Informatics Engineering, Sepuluh Nopember Institute of Technology, Surabaya.'})
+     gsap.to('.lead1', {duration: 2, delay: 1.5, text:'Hello, I am Fian Awamiry Maulana'})
+     gsap.to('.lead2', {duration: 6, delay: 3, text:'from Department of Informatics Engineering Institut Teknologi Sepuluh Nopember, Surabaya (ITS)'})
+     gsap.to('.lead3', {duration: 5, delay: 9, text:'I’m just learning to make a website. My Specialty is Front-end Developer.<span id="dots">...</span><span id="more"> I have diverse set of skills, ranging from design, to HTML+CSS+Javascript, all the way to PHP, and some frameworks like laravel, and bootstrap. I’m working remotely on projects for some start up. Please contact me for any projects and works! &#129309;</span>'})
    </script>
     <script > 
       //navbar GSAP
@@ -495,6 +496,25 @@
             gsap.from('.display-4', {duration: 1.5, x:-50, opacity:0, delay: 0.5, ease:'back'})  
         </script>
    <!--Akhir GSAP-->
+   <!--Awal Read More-->
+   <script>
+    function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+    
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more"; 
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less"; 
+        moreText.style.display = "inline";
+      }
+    }
+    </script>
+   <!--Akhir Read More-->
      <script src="js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
