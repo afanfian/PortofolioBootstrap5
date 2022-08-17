@@ -1,19 +1,11 @@
-.Achievments-item {
-  text-align: justify;
-}
-.About-text {
-  text-align: justify;
-}
-.p {
-  text-align: justify;
-}
-
 #more {
   display: none;
 }
+
 body {
   background-color: black;
   color: white;
+  font-family: 'Poppins', sans-serif;
 }
 nav ul li a:hover {
   box-shadow: 0 0 5px #18d26e, 0 0 5px #18d26e, 0 0 5px #18d26e, 0 0 5px #18d26e;
@@ -30,6 +22,7 @@ img.tengah {
   margin-left: auto;
   margin-right: auto;
 }
+/* Awal Experience */
 .resume .resume-title {
   font-size: 26px;
   font-weight: 700;
@@ -87,6 +80,22 @@ img.tengah {
   background: #18d26e;
   border: 2px solid #18d26e;
 }
+/* Akhir Experience */
+
+/* Achievments */
+.Achievments-item {
+  text-align: justify;
+}
+
+/* About */
+.About-text {
+  text-align: justify;
+}
+.p {
+  text-align: justify;
+}
+
+/* Animasi Gsap */
 .lead3 {
   font-weight: bold;
 }

@@ -1,94 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Fian Awamiry Maulana's Portofolio</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-     <!--Awal AOS sebelum css kita-->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <!--Akhir AOS sebelum css kita-->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
-    <link rel="stylesheet" href="css/mode.css">
-  </head>
-  <body>
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top" style="color: white;"><!--warna-->
-      <div class="container">
-        <!--Awal Dark Mode-->
-        <span  class= "icon fa fa-sun" style="font-size:23px; word-spacing: 7px;"   onclick="setDarkMode(true)"> </span>
-        <span  class="icon fa fa-moon" style="font-size:22px;"  onclick="setDarkMode(false)"></span>
-        <style>
-          #darkmode {
-            background: white;
-            color: black;
+
+<head>
+  <title>Fian Awamiry Maulana's Portofolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!--Awal AOS sebelum css kita-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!--Akhir AOS sebelum css kita-->
+  <!-- Awal Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- Akhir Bootstrap -->
+  <!-- Awal Font-Awesome -->
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <!-- Akhir Font-Awesome -->
+  <!-- Style css kita -->
+  <link rel="stylesheet" href="css/mode.css">
+  <!-- Awal Font Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <!-- Akhir Font Poppins -->
+</head>
+
+<body>
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top" style="color: white;">
+    <!--warna-->
+    <div class="container">
+      <!--Awal Dark Mode-->
+      <span class="icon fa fa-sun" style="font-size:23px; word-spacing: 7px;" onclick="setDarkMode(true)"> </span>
+      <span class="icon fa fa-moon" style="font-size:22px;" onclick="setDarkMode(false)"></span>
+      <style>
+        #darkmode {
+          background: white;
+          color: black;
+        }
+      </style>
+      <script>
+        function setDarkMode(isDark) {
+          if (isDark) {
+            document.body.setAttribute("id", "darkmode");
+          } else {
+            document.body.setAttribute("id", "");
           }
-        </style>
-        <script>
-          function setDarkMode(isDark) {
-            if (isDark) {
-              document.body.setAttribute("id", "darkmode");
-            } else {
-              document.body.setAttribute("id", "");
-            }
-          }
-        </script>
-        <!--Akhir Dark Mode-->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#Home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#resume">Experiences</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Achievements">Achievements</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Education ">Education</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#About">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Contact">Contact</a>
-            </li>
-            </li>
-          </ul>
-        </div>
+        }
+      </script>
+      <!--Akhir Dark Mode-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#Home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#resume">Experiences</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Achievements">Achievements</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Education ">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#About">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Contact">Contact</a>
+          </li>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
   <!--Akhir Navbar-->
-    <!--Awal Home-->
-    <section class="Home py-5" id="Home">
-      <div class="container-lg py-4" >
-        <div class="row min-vh-100 align-item-center align-content-center">
-          <div class="col-md-4 mt-5 mt-md-0" data-aos="fade-down" data-aos-duration="1000">
-            <div clas="home-img text-center">
-              <img class="tengah" src="img1/Fotoprofil.png" width="150" alt="Profi img" />
-            </div>
+  <!--Awal Home-->
+  <section class="Home py-5" id="Home">
+    <div class="container-lg py-4">
+      <div class="row min-vh-100 align-item-center align-content-center">
+        <div class="col-md-4 mt-5 mt-md-0" data-aos="fade-down" data-aos-duration="1000">
+          <div clas="home-img text-center">
+            <img class="tengah" src="img1/Fotoprofil.png" width="150" alt="Profi img" />
           </div>
-          <div class="col-md mt-5 mt-md-0 order-md-first">
-            <!--order-md-first Mengubah foto dari kkanan ke  kiri-->
-            <div class="home-text">
-              <h3 class="lead1"></h3>
-              <h4 class="lead2"></h4>
-              <p class="lead3" fs-bold></p>
-              <button onclick="myFunction()" id="myBtn" class="button button1">Read more</button>
-              <br>
-              <a href="https://linktr.ee/afanfiann" class="btn px-3 btn-success mt-3">My Work</a>
-            </div>
+        </div>
+        <div class="col-md mt-5 mt-md-0 order-md-first">
+          <!--order-md-first Mengubah foto dari kkanan ke  kiri-->
+          <div class="home-text">
+            <h3 class="lead1"></h3>
+            <h4 class="lead2"></h4>
+            <p class="lead3" fs-bold></p>
+            <button onclick="myFunction()" id="myBtn" class="button button1">Read more</button>
+            <br>
+            <a href="https://linktr.ee/afanfiann" class="btn px-3 btn-success mt-3">My Work</a>
           </div>
         </div>
       </div>
-    </section>
-    <!--Akhir Home-->
-    <!--Awal Experience-->
-  <!-- ======= Resume Section ======= -->
+    </div>
+  </section>
+  <!--Akhir Home-->
+  <!--Awal Experience-->
   <section class="resume py-5" id="resume">
     <div class="container-lg py-4">
       <div class="row justify-content-center">
@@ -96,436 +109,585 @@
           <div class="section-title text-center">
             <h2 class="fw-bold mb-5" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">Experiences</h2>
           </div>
-          <h3 class="resume-title" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">Society of Petroleum Engineers (SPE) Institut Teknologi Sepuluh Nopember (ITS) Student Chapter</h3>
+          <h3 class="resume-title" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">Waste4Change</h3>
+          <div class="resume-item" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
+            <h4> Internship | Full Stack Engineer</h4>
+            <h5> August 2022 - Present</h5>
+            <p class="p"><em>Bekasi, West Java, Indonesia</em></p>
+            <p class="p">- PT Wasteforchange Alam Indonesia is a holistic waste management service provider based in
+              Bekasi, Indonesia. As a company, we aim to be at the forefront of providing ethical and responsible waste
+              management solutions and reducing the amount of waste that is dumped in landfills through the development
+              of a circular economy.
+            </p>
+            <p class="p">- Here I learned to create, and maintain the web using HTML, CSS, SASS, PHP, MySQL, and the
+              CodeIgniter Framework.</p>
+            <P class="P">- The website of Waste4Change can be seen as follows: <a href="https://waste4change.com/"
+                target="_blank">Waste4Change</a></P>
+          </div>
+          <h3 class="resume-title" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">Binar Academy</h3>
+          <div class="resume-item" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
+            <h4> Studi Independen Kampus Merdeka Batch 3 | Fullstack Web</h4>
+            <h5> August 2022 - Present</h5>
+            <p class="p"><em>Tangerang, Banten, Indonesia</em></p>
+            <p class="p">- Binar Academy are focusing on developing digital skills and talent by providing access to an
+              enhanced learning experience with a defined learning journey and diverse learning style to support the
+              career growth for high school graduates, university students, and career shifters.
+            </p>
+            <p class="p">- Here I learned, Web Socket, SSR (Server Side Rendering) in React / With NEXTJS, Media
+              handling, ESLINT, Unit testing & TDD, Deployment & CI/CD, FSW (Introduction), HTML, CSS, CSS Framework,
+              Data Structure, Operators & Expressions, Basic Javascript Algorithm, OOP in Javascript, DOM, Node.JS,
+              HTTP Server, Design Pattern, Asynchronus, Authentication, Open API, React JS, React Router & backend
+              integration, OAUTH, Redux, Application History, Product Concepts, SDLC, Tech Stack, Programming
+              Languages, Terminal and IDE, GIT, Web Layout, Responsive Design, Express JS, Restful API, Database,
+              and ORM (Object Relational Mapping).</p>
+          </div>
+          <h3 class="resume-title" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">Society of
+            Petroleum Engineers (SPE) Institut Teknologi Sepuluh Nopember (ITS) Student Chapter</h3>
           <div class="resume-item" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
             <h4> Staff | Web Development</h4>
-            <h5> August 2021 - Present</h5>
+            <h5> August 2021 - July 2022</h5>
             <p class="p"><em>Surabaya, East Java, Indonesia</em></p>
-            <p class="p">- The Society of Petroleum Engineers (SPE) is a non-profit professional association whose more than 158,000 members in 143 countries are engaged in oil and gas exploration and production. SPE is a key resource for technical knowledge providing publications, events, training courses, and online resources.</p>
-            <p class="p">- Society of Petroleum Engineers Institut Teknologi Sepuluh Nopember Student Chapter (SPE ITS SC) itself was established in 2011. This organization aims to elevate understanding of the world’s energy sources to each one of its elements by exposing them, starts from the basic knowledge until the advanced technologies and recent developments in the industries. SPE ITS SC intents to become the centerpiece of energy, specifically in the oil and gas industry, where our work is demonstrated professionally and proven internationally through unceasing professional competence.</p>
+            <p class="p">- The Society of Petroleum Engineers (SPE) is a non-profit professional association whose more
+              than 158,000 members in 143 countries are engaged in oil and gas exploration and production. SPE is a key
+              resource for technical knowledge providing publications, events, training courses, and online resources.
+            </p>
+            <p class="p">- Society of Petroleum Engineers Institut Teknologi Sepuluh Nopember Student Chapter (SPE ITS
+              SC) itself was established in 2011. This organization aims to elevate understanding of the world’s energy
+              sources to each one of its elements by exposing them, starts from the basic knowledge until the advanced
+              technologies and recent developments in the industries. SPE ITS SC intents to become the centerpiece of
+              energy, specifically in the oil and gas industry, where our work is demonstrated professionally and proven
+              internationally through unceasing professional competence.</p>
             <p class="p">- I was accepted at the ITS SC 2021/2022 SPE Staff as a Web Development Department.</p>
+            <p class="p">- Here I learned to create, and maintain the web using HTML, CSS, SASS, PHP, and the Laravel 8
+              Framework.</p>
+            <p class="p">- The website of SPE ITS SC can be seen as follows: <a href="https://speitssc.org/"
+                target="_blank">SPEITSSC</a></p>
           </div>
           <h3 class="resume-title" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">Mentoringg.id</h3>
           <div class="resume-item" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
             <h4> Intrenship | Front-end Developer</h4>
             <h5> August 2021 - December 2021</h5>
             <p class="p"><em>Semarang, Central Java, Indonesia</em></p>
-            <p class="p">- Mentoringg.id is an edutech start-up, and is happy to help students determine their path to higher education and work.</p>
-            <p class="p">- Other than that, Mentoringg.id helps them to develop their hard and soft skills through our program. We hope they can grow and make an impact in their immediate environment.</p>
+            <p class="p">- Mentoringg.id is an edutech start-up, and is happy to help students determine their path to
+              higher education and employment. In addition, Mentoringg.id helps them to develop their hard and soft
+              skills through our program. We hope they can grow and make an impact in their immediate environment.</p>
             <p class="p">- Mentoringg.id is a community in 2019, and a start-up in 2021.</p>
-            <p class="p">- I was accepted as an internship at Mentoringg.id as a Front-end Developer.</p>
-            <p class="p">- This internship at mentoringg.id, learns new things, namely by creating a web using the laravel 8 framework and using Lumen.</p>
+            <p class="p">- This internship at mentoringg.id, learns new things by creating a web using the laravel 8
+              framework and using Lumen.</p>
+            <p class="p">- Internships at mentoringg.id, I often coordinate with the UI/UX division regarding the
+              creation of the web design, and the Back-end developer division regarding the appearance of data that will
+              be displayed on the website. Here are the results of the website that I have created:
+              <a href="https://intip.in/mentoringgid" target="_blank">Mentoringg.id</a>
+            </p>
           </div>
           <h3 class="resume-title" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">Plasmahero.id</h3>
           <div class="resume-item" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
             <h4> Volunteer | IT Volunteer</h4>
             <h5>July 2021 - January 2022</h5>
             <p class="p"><em>Surabaya, East Java, Indonesia</em></p>
-            <p class="p">- The beginning of Plasmahero's birth, based on disaster against the COVID-19 outbreak which at the beginning of the pandemic, plasma therapy convalescent. Although clinically still a looking for, but this therapy can be alternative healing for COVID-19 patients. This is what lifts our spirits and COVID-19 survivors to get help relieve our brothers exposed to the COVID-19 outbreak.</p>
-            <p class="p">- Plasmahero.id is a gathering place for COVID-19 survivors who want to help with efforts to deal with the COVID-19 outbreak. It was formed on December 25, 2020, and currently has captured a lot of survivors from various cities and regions in Indonesia, such as Jakarta, Bandung, Bandar Lampung, to Surabaya.</p>
+            <p class="p">- The beginning of Plasmahero's birth, based on disaster against the COVID-19 outbreak which at
+              the beginning of the pandemic, plasma therapy convalescent. Although clinically still a looking for, but
+              this therapy can be alternative healing for COVID-19 patients. This is what lifts our spirits and COVID-19
+              survivors to get help relieve our brothers exposed to the COVID-19 outbreak.</p>
+            <p class="p">- Plasmahero.id is a gathering place for COVID-19 survivors who want to help with efforts to
+              deal with the COVID-19 outbreak. It was formed on December 25, 2020, and currently has captured a lot of
+              survivors from various cities and regions in Indonesia, such as Jakarta, Bandung, Bandar Lampung, to
+              Surabaya.</p>
+            <p class="p">- The founder of Plasmahero.id, namely dr. Ariani, M.Kes, SpA(K).</p>
+            <p class="p">- Here I learned to fix bugs, create and maintain websites using HTML, CSS, PHP and the Laravel
+              8 Framework.</p>
+            <p class="p">- The website of Plasmahero.id can be seen as follows: <a href="https://plasmahero.help/"
+                target="_blank">Plasmahero.id</a></p>
+            <p class="p"></p>
           </div>
-          <h3 class="resume-title" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">Schematics ITS</h3>
+          <h3 class="resume-title" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">Schematics ITS
+          </h3>
           <div class="resume-item" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
-            <h4 >Organization Committee | Deputy Coordinator of two &amp; Schematics National Logic Competition (NLC)</h4>
+            <h4>Organization Committee | Deputy Coordinator of two &amp; Schematics National Logic Competition (NLC)
+            </h4>
             <h5>May 2021 - December 2021</h5>
             <p class="p"><em>Surabaya, East Java, Indonesia</em></p>
-            <p class="p">Schematics is an event at the Department of Informatics, Sepuluh Nopember Institute of Technology, Surabaya. I was in the Schematics Nlc division as deputy coordinator 2, tasked with assisting the chairman and deputy coordinator 1 and connecting expert staff (class of 2019) and staff (2020).</p>
+            <p class="p">Schematics is an event at the Department of Informatics, Sepuluh Nopember Institute of
+              Technology, Surabaya. I was in the Schematics Nlc division as deputy coordinator 2, tasked with assisting
+              the chairman and deputy coordinator 1 and connecting expert staff (class of 2019) and staff (2020).</p>
           </div>
           <h3 class="resume-title " data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">Akademis.id</h3>
           <div class="resume-item" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
             <h4> INTERNSHIP | IT Division &amp; DevOps Engineering Subdivision</h4>
             <h5>January 2021 - May 2021</h5>
             <p class="p"><em>Bandung, West Java, Indonesia</em></p>
-            <p class="p">- Akademis.id is an educational start-up platform that provides many products for highly educated Indonesian students. Now, Akademis.id has more than 200,000 active users and 143 thousand followers on Instagram.</p>
-            <p class="p">- Usually compose and make their own every two weeks for high school students TryOut to prepare for their test trip to university.</p>
-            <p class="p">- Teach students about geography virtually once every two weeks and involve more than 200 participants.</p>
-            <p class="p">- Here I get new knowledge that I haven't gotten in high school or during lectures.</p>
-            <p class="p">- In addition, I have made many friends and relations from various universities in Indonesia and outside Indonesia.</p>
+            <p class="p">- Akademis.id is an educational start-up platform that provides many products for Indonesian
+              students with higher education. Now, Akademis.id has more than 200,000 active users and 143,000 followers
+              on Instagram. Usually make and make their own every two weeks for High School TryOut students to prepare
+              for their exam trip to university. Teach students about geography virtually every two weeks and engage
+              more than 200 participants.</p>
+            <p class="p">- Here I learn to check for bugs or errors in try out or exam questions that have been uploaded
+              on the Akademis.id website and fix the bugs.</p>
+            <p class="p">- Internships at akademis.id, I often coordinate with the front-end developer division, and the
+              question making division</p>
+            <p class="p">- The website of Akademis.id can be seen as follows: <a href="https://akademis.id/"
+                target="_blank">Akademis.id</a></p>
+            </p>
           </div>
-          <h3 class="resume-title" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">PT. Media Antar Nusa (Nusanet)</h3>
+          <h3 class="resume-title" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">PT. Media Antar
+            Nusa (Nusanet)</h3>
           <div class="resume-item" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
-            <h4 >INTERNSHIP | Information Technology Support Technician </h4>
+            <h4>INTERNSHIP | Information Technology Support Technician </h4>
             <h5>July 2019 - September 2019 </h5>
             <p class="p"><em>Lumajang, East Java, Indonesia</em></p>
-            <p class="p">Here I learned new things, such as configurations related to IP addresses, assembling laptops, computers, and tools used to connect users' wifi to the wifi server, and working well with the workers at Nusa.net. For the work and knowledge that I got during my internship as follows:</p>
+            <p class="p">- Here I learned new things, such as configurations related to IP addresses, assembling
+              laptops,
+              computers, and tools used to connect users' wifi to the wifi server, and working well with the workers at
+              Nusa.net. For the work and knowledge that I got during my internship as follows:</p>
             <p class="p">- Installing wifi using fiber optic.</p>
             <p class="p">- Assemble and configure powerbeam and litebeam. </p>
             <p class="p">- Configure wifi and mikrotik.</p>
           </div>
-          <h3 class="resume-title" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">LPPL Radio Suara Lumajang 104.1 FM</h3>
+          <h3 class="resume-title" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">LPPL Radio Suara
+            Lumajang 104.1 FM</h3>
           <div class="resume-item" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
-            <h4 >INTERNSHIP | Information Technology Support Technician</h4>
+            <h4>INTERNSHIP | Information Technology Support Technician</h4>
             <h5> January 2019 - March 2019</h5>
             <p class="p"><em>Lumajang, East Java, Indonesia</em></p>
-            <p class="p">Here I got new knowledge that I didn't know, besides that I also got new relationships with workers and interns in various offices, then I also got motivation to continue to high school or college, because it would be very useful for the future for me and my family. For the work and knowledge that I got during my internship as follows:<em>Lumajang, East Java, Indonesia</em></p>
+            <p class="p">- Here I got new knowledge that I didn't know, besides that I also got new relationships with
+              workers and
+              internships in various offices, then I also got motivated to continue to high school or college, because
+              it
+              will be very useful for the future for me and my family. For the work and knowledge that I gained during
+              my internship as follows:</p>
             <p class="p">- Photographer of resource persons live on LPPL Radio Suara Lumajang 104.1 FM.</p>
             <p class="p">- Input data related to LPPL Radio Suara Lumajang 104.1 FM.</p>
-            <p class="p">- Participate in helping coverage workers or seek information directly, with a big or interesting event in the city of Lumajang, East Java.</p>
+            <p class="p">- Participate in helping coverage workers or seek information directly, with a big or
+              interesting event in the city of Lumajang, East Java.</p>
           </div>
-        </div>
         </div>
       </div>
     </div>
-  </section><!-- End Resume Section -->
-    <!--Akhir Experience-->
-    <!--Awal Achievements-->
-    <section class="Achievements py-5" id="Achievements">
-      <div class="container-lg py-4">
-      
-        <div class="row justify-content-center">
-          <div class="col-lg-8" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200"> <!--Animasi AOS-->
-            <div class="section-title text-center">
-              <h2 class="fw-bold mb-5">Achievements</h2>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 col-lg-4">
-            <div class="Achievments-item">
-              <img src="img1/Achievments/Juara1.jpg" class="w-100 img-thumbnail" alt="Portofolio Item" data-aos="zoom-in" data-aos-duration="1000"/> <!--Animasi AOS-->
-              <h3 class="fw-bold fs-5 text-center">Quadrathlon 2020 Category Game Development</h3>
-              <p class="fw-bold text-justify">1st place in the 2020 Quadrathlon competition held by the Department of Informatics Engineering, ITS.</p>
-              <p>Together with member of the Kesehatanmu Rek team, namely Raul Ilma Rajasa, Fian Awamiry Maulana, and Achmad Nasruddin Risky Nanda.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="Achievments-item">
-              <img src="img1/Achievments/Juara3.jpg" class="w-100 img-thumbnail" alt="Portofolio Item" data-aos="zoom-in"  data-aos-duration="1000"/> <!--Animasi AOS-->
-              <h3 class="fw-bold fs-5 text-center">BARONAS (Lomba Robot Nasional) 2021</h3>
-              <p class="fw-bold text-justify">3rd place in the BARONAS (Lomba Robot Nasional) 2021 competition held by the Department of Electrical Engineering, ITS.</p>
-              <p>Together with member of the Kesehatanmu Rek team, namely Raul Ilma Rajasa, Fian Awamiry Maulana, and Nur Muhammad 'Ainul Yaqin.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="Achievments-item">
-              <img src="img1/Achievments/Timfavorite.jpg" class="w-100 img-thumbnail" alt="Portofolio Item" data-aos="zoom-in"  data-aos-duration="1000"/> <!--Animasi AOS-->
-              <h3 class="fw-bold fs-5 text-center">BARONAS (Lomba Robot Nasional) 2021</h3>
-              <p class="fw-bold text-justify">Favorite team for the 2021 BARONAS (National Robot Competition) competition held by the ITS Electrical Engineering Department.</p>
-              <p>Together with member of the Kesehatanmu Rek team, namely Raul Ilma Rajasa, Fian Awamiry Maulana, and Nur Muhammad 'Ainul Yaqin.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="Achievments-item">
-              <img src="img1/Achievments/Juara5.jpg" class="w-100 img-thumbnail" alt="Portofolio Item" data-aos="zoom-in"  data-aos-duration="1000"/> <!--Animasi AOS-->
-              <h3 class="fw-bold fs-5 text-center">National Business Plan Competition 2021</h3>
-              <p class="fw-bold text-justify" >5th winner in the national business plan competition 2021 held by Jakarta Student and Innovation.</p>
-              <p>Together with member of the Kesehatanmu Rek team, namely Raul Ilma Rajasa, Fian Awamiry Maulana, and Nur Muhammad 'Ainul Yaqin.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="Achievments-item">
-              <img src="img1/Achievments/Bestpaper.jpg" class="w-100 img-thumbnail" alt="Portofolio Item" data-aos="zoom-in"  data-aos-duration="1000"/> <!--Animasi AOS-->
-              <h3 class="fw-bold fs-5 text-center">Innovation Entrepreneurship Exhibition (IEEE) Magstrom 2021</h3>
-              <p class="fw-bold text-justify">Best paper in the Innovation Entrepreneurship Exhibition (IEEE) Magstrom 2021 competition held by Himpunan Mahasiswa Manajemen at Universitas Bakrie.</p>
-              <p>Together with member of the Kesehatanmu Rek team, namely Raul Ilma Rajasa, Fian Awamiry Maulana, and Nur Muhammad 'Ainul Yaqin.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="Achievments-item">
-              <img src="img1/Achievments/lidm2021.jpg" class="w-100 img-thumbnail" alt="Portofolio Item" data-aos="zoom-in"  data-aos-duration="1000"/> <!--Animasi AOS-->
-              <h3 class="fw-bold fs-5 text-center">Lomba Inovasi Digital Mahasiswa (LIDM) 2021</h3>
-              <p class="fw-bold text-justify">4th Place in Lomba Inovasi Digital Mahasiswa - Divisi Poster Digital held by Pusat Prestasi Nasional - Kementerian Pendidikan dan Kebudayaan Republik Indonesia (Puspresnas Kemdikbud-RI) </p>
-              <p>Together with member of the GenTech team, namely Fian Awamiry Maulana, Zahra Fayyadiyati, Muhammad Akmal Rishwanda and Rohmawati Dwi Anggreini</p>
-            </div>
+    </div>
+  </section>
+  <!--Akhir Experience-->
+  <!--Awal Achievements-->
+  <section class="Achievements py-5" id="Achievements">
+    <div class="container-lg py-4">
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
+          <!--Animasi AOS-->
+          <div class="section-title text-center">
+            <h2 class="fw-bold mb-5">Achievements</h2>
           </div>
         </div>
       </div>
-    </section>
-    <!--Akhir Achievements-->
-    <!--Awal Education-->
-    <section class="Education py-5" id="Education">
-      <div class="container-lg py-4">
-    
-        <div class="row justify-content-center">
-          <div class="col-lg-8" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200"> <!--Animasi AOS-->
-            <div class="section-title text-center">
-              <h2 class="fw-bold mb-5">Education</h2>
-            </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <div class="Achievments-item">
+            <img src="img1/Achievments/Juara1.jpg" class="w-100 img-thumbnail" alt="Portofolio Item" data-aos="zoom-in"
+              data-aos-duration="1000" />
+            <!--Animasi AOS-->
+            <h3 class="fw-bold fs-5 text-center">Quadrathlon 2020 Category Game Development</h3>
+            <p class="fw-bold text-justify">1st place in the 2020 Quadrathlon competition held by the Department of
+              Informatics Engineering, ITS.</p>
+            <p>Together with member of the Kesehatanmu Rek team, namely Raul Ilma Rajasa, Fian Awamiry Maulana, and
+              Achmad Nasruddin Risky Nanda.</p>
           </div>
         </div>
-        <div class="row text-center">
-          <div class="col-md-6 col-lg-6 mb-4" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200"> <!--Animasi AOS-->
-            <div class="Education-item shadow-sm p-4 rounded ">
-              <div class="icon my-3 text-success fs-2">
-                <i class="fas fa-school"></i>
-                <!--Icon-->
-              </div>
-              <h3 class="fs-5 py-2" >SDN 01 WONOREJO</h3>
-              <p class="text-muted">2009 - 2014</p>
-            </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="Achievments-item">
+            <img src="img1/Achievments/Juara3.jpg" class="w-100 img-thumbnail" alt="Portofolio Item" data-aos="zoom-in"
+              data-aos-duration="1000" />
+            <!--Animasi AOS-->
+            <h3 class="fw-bold fs-5 text-center">BARONAS (Lomba Robot Nasional) 2021</h3>
+            <p class="fw-bold text-justify">3rd place in the BARONAS (Lomba Robot Nasional) 2021 competition held by the
+              Department of Electrical Engineering, ITS.</p>
+            <p>Together with member of the Kesehatanmu Rek team, namely Raul Ilma Rajasa, Fian Awamiry Maulana, and Nur
+              Muhammad 'Ainul Yaqin.</p>
           </div>
-          <div class="col-md-6 col-lg-6 mb-4" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200"> <!--Animasi AOS-->
-            <div class="Education-item shadow-sm p-4 rounded ">
-              <div class="icon my-3 text-success fs-2">
-                <i class="fas fa-school"></i>
-                <!--Icon-->
-              </div>
-              <h3 class="fs-5 py-2">SMPN 02 LUMAJANG</h3>
-              <p class="text-muted">2014 - 2017</p>
-            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="Achievments-item">
+            <img src="img1/Achievments/Timfavorite.jpg" class="w-100 img-thumbnail" alt="Portofolio Item"
+              data-aos="zoom-in" data-aos-duration="1000" />
+            <!--Animasi AOS-->
+            <h3 class="fw-bold fs-5 text-center">BARONAS (Lomba Robot Nasional) 2021</h3>
+            <p class="fw-bold text-justify">Favorite team for the 2021 BARONAS (National Robot Competition) competition
+              held by the ITS Electrical Engineering Department.</p>
+            <p>Together with member of the Kesehatanmu Rek team, namely Raul Ilma Rajasa, Fian Awamiry Maulana, and Nur
+              Muhammad 'Ainul Yaqin.</p>
           </div>
-          <div class="col-md-6 col-lg-6 mb-4" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200"> <!--Animasi AOS-->
-            <div class="Education-item shadow-sm p-4 rounded ">
-              <div class="icon my-3 text-success fs-2">
-                <i class="fas fa-school"></i>
-                <!--Icon-->
-              </div>
-              <h3 class="fs-5 py-2">SMKN 01 LUMAJANG</h3>
-              <p class="text-muted">2017 - 2020 </p>
-            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="Achievments-item">
+            <img src="img1/Achievments/Juara5.jpg" class="w-100 img-thumbnail" alt="Portofolio Item" data-aos="zoom-in"
+              data-aos-duration="1000" />
+            <!--Animasi AOS-->
+            <h3 class="fw-bold fs-5 text-center">National Business Plan Competition 2021</h3>
+            <p class="fw-bold text-justify">5th winner in the national business plan competition 2021 held by Jakarta
+              Student and Innovation.</p>
+            <p>Together with member of the Kesehatanmu Rek team, namely Raul Ilma Rajasa, Fian Awamiry Maulana, and Nur
+              Muhammad 'Ainul Yaqin.</p>
           </div>
-          <div class="col-md-6 col-lg-6 mb-4" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200"> <!--Animasi AOS-->
-            <div class="Education-item shadow-sm p-4 rounded ">
-              <div class="icon my-3 text-success fs-2">
-                <i class="fas fa-school"></i>
-                <!--Icon-->
-              </div>
-              <h3 class="fs-5 py-2">Institut Teknologi Sepuluh Nopember, Surabaya (ITS)</h3>
-              <p class="text-muted">2020 - Present</p>
-            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="Achievments-item">
+            <img src="img1/Achievments/Bestpaper.jpg" class="w-100 img-thumbnail" alt="Portofolio Item"
+              data-aos="zoom-in" data-aos-duration="1000" />
+            <!--Animasi AOS-->
+            <h3 class="fw-bold fs-5 text-center">Innovation Entrepreneurship Exhibition (IEEE) Magstrom 2021</h3>
+            <p class="fw-bold text-justify">Best paper in the Innovation Entrepreneurship Exhibition (IEEE) Magstrom
+              2021 competition held by Himpunan Mahasiswa Manajemen at Universitas Bakrie.</p>
+            <p>Together with member of the Kesehatanmu Rek team, namely Raul Ilma Rajasa, Fian Awamiry Maulana, and Nur
+              Muhammad 'Ainul Yaqin.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="Achievments-item">
+            <img src="img1/Achievments/lidm2021.jpg" class="w-100 img-thumbnail" alt="Portofolio Item"
+              data-aos="zoom-in" data-aos-duration="1000" />
+            <!--Animasi AOS-->
+            <h3 class="fw-bold fs-5 text-center">Lomba Inovasi Digital Mahasiswa (LIDM) 2021</h3>
+            <p class="fw-bold text-justify">4th Place in Lomba Inovasi Digital Mahasiswa - Divisi Poster Digital held by
+              Pusat Prestasi Nasional - Kementerian Pendidikan dan Kebudayaan Republik Indonesia (Puspresnas
+              Kemdikbud-RI) </p>
+            <p>Together with member of the GenTech team, namely Fian Awamiry Maulana, Zahra Fayyadiyati, Muhammad Akmal
+              Rishwanda and Rohmawati Dwi Anggreini</p>
           </div>
         </div>
       </div>
-    </section>
-    <!--Akhir Education-->
-    <!--Awal About-->
-    <section class="About py-5" id="About">
-      <div class="container-lg py-4" >
-        <div class="row justify-content-center">
-          <div class="col-lg-8" data-aos="fade-down" data-aos-duration="1000"> <!--Animasi AOS-->
-            <div class="section-title text-center">
-              <h2 class="fw-bold mb-5">About</h2>
+    </div>
+  </section>
+  <!--Akhir Achievements-->
+  <!--Awal Education-->
+  <section class="Education py-5" id="Education">
+    <div class="container-lg py-4">
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
+          <!--Animasi AOS-->
+          <div class="section-title text-center">
+            <h2 class="fw-bold mb-5">Education</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-6 col-lg-6 mb-4" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
+          <!--Animasi AOS-->
+          <div class="Education-item shadow-sm p-4 rounded ">
+            <div class="icon my-3 text-success fs-2">
+              <i class="fas fa-school"></i>
+              <!--Icon-->
+            </div>
+            <h3 class="fs-5 py-2">SDN 01 WONOREJO</h3>
+            <p class="text-muted">2009 - 2014</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6 mb-4" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
+          <!--Animasi AOS-->
+          <div class="Education-item shadow-sm p-4 rounded ">
+            <div class="icon my-3 text-success fs-2">
+              <i class="fas fa-school"></i>
+              <!--Icon-->
+            </div>
+            <h3 class="fs-5 py-2">SMPN 02 LUMAJANG</h3>
+            <p class="text-muted">2014 - 2017</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6 mb-4" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
+          <!--Animasi AOS-->
+          <div class="Education-item shadow-sm p-4 rounded ">
+            <div class="icon my-3 text-success fs-2">
+              <i class="fas fa-school"></i>
+              <!--Icon-->
+            </div>
+            <h3 class="fs-5 py-2">SMKN 01 LUMAJANG</h3>
+            <p class="text-muted">2017 - 2020 </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6 mb-4" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
+          <!--Animasi AOS-->
+          <div class="Education-item shadow-sm p-4 rounded ">
+            <div class="icon my-3 text-success fs-2">
+              <i class="fas fa-school"></i>
+              <!--Icon-->
+            </div>
+            <h3 class="fs-5 py-2">Institut Teknologi Sepuluh Nopember, Surabaya (ITS)</h3>
+            <p class="text-muted">2020 - Present</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Akhir Education-->
+  <!--Awal About-->
+  <section class="About py-5" id="About">
+    <div class="container-lg py-4">
+      <div class="row justify-content-center">
+        <div class="col-lg-8" data-aos="fade-down" data-aos-duration="1000">
+          <!--Animasi AOS-->
+          <div class="section-title text-center">
+            <h2 class="fw-bold mb-5">About</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000">
+          <!--Animasi AOS-->
+          <div class="About-text">
+            <h3 class="fs-4 mb-3">Undergraduate Informatics Engineering Student at Sepuluh Nopember Institute of
+              Technology (ITS)</h3>
+            <p>
+              Let me introduce myself, my name is Fian Awamiry Maulana, you can call him Afan or Fian. I was born in the
+              city of Surabaya and live in the city of Lumajang, East Java, with my parents and grandmother. I am
+              currently studying at the Sepuluh Nopember Institute of Technology Surabaya (ITS), in the department of
+              Informatics Engineering and the Faculty of Electrical Technology and Intelligent Information Technology
+              (FTEIC).
+            </p>
+          </div>
+          <div class="row text-center text-uppercase my-3">
+            <div class="col-sm-4" data-aos="fade-right" data-aos-duration="1000">
+              <!--Animasi AOS-->
+              <div class="fact-item">
+                <h4 class="fs-1 fw bold">4</h4>
+                <p class="fs-6">Project</p>
+              </div>
+            </div>
+            <div class="col-sm-4" data-aos="fade-right" data-aos-duration="1000">
+              <!--Animasi AOS-->
+              <div class="fact-item">
+                <h4 class="fs-1 fw bold">4</h4>
+                <p class="fs-6">Happy Clients</p>
+              </div>
+            </div>
+            <div class="col-sm-4" data-aos="fade-right" data-aos-duration="1000">
+              <!--Animasi AOS-->
+              <div class="fact-item">
+                <h4 class="fs-1 fw bold">4</h4>
+                <p class="fs-6">Positif Reviews</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 d-flex align-items-center" data-aos="fade-right" data-aos-duration="1000">
+              <!--Animasi AOS-->
+              <a href="https://drive.google.com/file/d/1PvXnqVZgAjMyNJmij-h2Txia9oJFTciR/view?usp=sharing"
+                class="btn px-5 btn-success me-5">Download CV</a>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000"> <!--Animasi AOS-->
-            <div class="About-text">
-              <h3 class="fs-4 mb-3">Undergraduate Informatics Engineering Student at Sepuluh Nopember Institute of Technology (ITS)</h3>
-              <p>
-                Let me introduce myself, my name is Fian Awamiry Maulana, you can call him Afan or Fian. I was born in the city of Surabaya and live in the city of Lumajang, East Java, with my parents and grandmother. I am currently studying at the Sepuluh Nopember Institute of Technology Surabaya (ITS), in the department of Informatics Engineering and the Faculty of Electrical Technology and Intelligent Information Technology (FTEIC).
+        <div class="col-md-6 mt-5 mt-md-0" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+          <!--Animasi AOS-->
+          <div class="skill-item mb-4">
+            <h2 class="fs-4 mb-2 fw-bold text-center">My Skill </h2>
+          </div>
+          <div class="Skill-item mb-4">
+            <h3 class="fs-6 fw-bold">
+              <img src="img1/c.png" alt="c" align="right" width="30px"> C Programming Language
+            </h3>
+
+          </div>
+          <div class="Skill-item mb-4">
+            <h3 class="fs-6 fw-bold">
+              <img src="img1/c++.png" alt="c++" align="right" width="30px">C++ Programming Language
+            </h3>
+          </div>
+          <div class="Skill-item mb-4">
+            <h3 class="fs-6 fw-bold ">
+              <img src="img1/js.png" alt="js" align="right" width="25px">JavaScript Programming Language
+            </h3>
+          </div>
+          <div class="Skill-item mb-4">
+            <h3 class="fs-6 fw-bold">
+              <img src="img1/html.png" alt="html" align="right" width="25px"> HTML
+            </h3>
+          </div>
+          <div class="Skill-item mb-4">
+            <h3 class="fs-6 fw-bold">
+              <img src="img1/css.png" alt="css" align="right" width="25px">CSS
+            </h3>
+          </div>
+          <div class="Skill-item mb-4">
+            <h3 class="fs-6 fw-bold">
+              <img src="img1/bootstrap.png" alt="bootstrap" align="right" width="30px">Bootstrap
+            </h3>
+          </div>
+          <div class="Skill-item mb-4">
+            <h3 class="fs-6 fw-bold ">
+              <img src="img1/laravel.png" alt="laravel" align="right" width="30px">Laravel 8
+            </h3>
+
+          </div>
+          <div class="Skill-item mb-4">
+            <h3 class="fs-6 fw-bold">
+              <img src="img1/office.png" alt="office" align="right" width="80px">Microsoft Office operation
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Akhir About-->
+  <!--Awal Contact -->
+  <section class="Contact py-5" id="Contact">
+    <div class="container-lg py-4">
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8" data-aos="fade-down" data-aos-duration="1000">
+          <!--Animasi AOS-->
+          <div class="section-title text-center">
+            <h2 class="fw-bold mb-5">Contact Me</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000">
+          <!--Animasi AOS-->
+          <div class="Contact-item d-flex mb-3">
+            <div class="icon fs-4 text-danger">
+              <i class="fas fa-envelope"></i></a>
+            </div>
+            <div class="text ms-3">
+              <h3 class="fs-5 fw-bold">Email</h3>
+              <p>afanfian14@gmail.com</p>
+            </div>
+          </div>
+          <div class="Contact-item d-flex mb-3">
+            <div class="icon fs-4 text-success">
+              <a href="https://wa.me/6289515776243" target="_blank"><i class="fab fa-whatsapp text-success"></i></a>
+            </div>
+            <div class="text ms-3">
+              <h3 class="fs-5 fw-bold">WhatsApp</h3>
+              <p>+6289-515-776-243</p>
+            </div>
+          </div>
+          <div class="Contact-item d-flex mb-3">
+            <div class="icon fs-4 ">
+              <a href="https://www.instagram.com/afanfiann/" target="_blank"><i
+                  class="fab fa-instagram text-danger"></i></a>
+            </div>
+            <div class="text ms-3">
+              <h3 class="fs-5 fw-bold">Instagram</h3>
+              <p>@afanfiann</p>
+            </div>
+          </div>
+          <div class="Contact-item d-flex mb-3">
+            <div class="icon fs-4 text-success">
+              <a href="https://www.linkedin.com/in/fianawamirymaulana/" target="_blank"><i
+                  class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="text ms-3">
+              <h3 class="fs-5 fw-bold">Linkedin</h3>
+              <p>Fian Awamiry Maulana</p>
+            </div>
+          </div>
+          <div class="Contact-item d-flex mb-3">
+            <div class="icon fs-4">
+              <a href="https://www.google.co.id/maps/search/Perum+Griyo+Wonorejo+indah+Q.04,+Krajan,+Wonorejo,+Kecamatan+Kedungjajang,+Kabupaten+Lumajang,+Jawa+Timur/@-8.0773088,113.2328504,18z/data=!3m1!4b1"
+                target="_blank"><i class="fas fa-map-marker-alt  text-success"></i></a>
+            </div>
+            <div class="text ms-3">
+              <h3 class="fs-5 fw-bold">Visit Home</h3>
+              <p>Perumahan Wonorejo Indah Blok Q.04 Rt.40 Rw.15, Kecamatan Kedungjajang, Kabupaten Lumajang, Jawa Timur
               </p>
             </div>
-            <div class="row text-center text-uppercase my-3">
-              <div class="col-sm-4" data-aos="fade-right" data-aos-duration="1000"> <!--Animasi AOS-->
-                <div class="fact-item">
-                  <h4 class="fs-1 fw bold">2</h4>
-                  <p class="fs-6">Project</p>
-                </div>
-              </div>
-              <div class="col-sm-4" data-aos="fade-right" data-aos-duration="1000"> <!--Animasi AOS-->
-                <div class="fact-item">
-                  <h4 class="fs-1 fw bold">2</h4>
-                  <p class="fs-6">Happy Clients</p>
-                </div>
-              </div>
-              <div class="col-sm-4" data-aos="fade-right" data-aos-duration="1000"> <!--Animasi AOS-->
-                <div class="fact-item">
-                  <h4 class="fs-1 fw bold">2</h4>
-                  <p class="fs-6">Positif Reviews</p>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-12 d-flex align-items-center" data-aos="fade-right" data-aos-duration="1000"> <!--Animasi AOS-->
-                <a href="https://drive.google.com/file/d/1FbJZDr3OFmAk-r3LUxSIcGOxZ1AR_uoS/view?usp=sharing" class="btn px-5 btn-success me-5">Download CV</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 mt-5 mt-md-0" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200"> <!--Animasi AOS-->
-            <div class="skill-item mb-4">
-              <h2 class="fs-4 mb-2 fw-bold text-center" >My Skill </h2>
-            </div>
-            <div class="Skill-item mb-4">
-              <h3 class="fs-6 fw-bold">
-                <img src="img1/c.png" alt="c" align="right" width="30px"> C Programming Language</h3>
-              
-            </div>
-            <div class="Skill-item mb-4">
-              <h3 class="fs-6 fw-bold">
-                <img src="img1/c++.png" alt="c++" align="right" width="30px">C++ Programming Language</h3>
-            </div>
-            <div class="Skill-item mb-4">
-              <h3 class="fs-6 fw-bold " >
-                <img src="img1/js.png" alt="js" align="right" width="25px">JavaScript Programming Language</h3>
-            </div>
-            <div class="Skill-item mb-4">
-              <h3 class="fs-6 fw-bold">
-                <img src="img1/html.png" alt="html" align="right" width="25px"> HTML </h3>
-            </div>
-            <div class="Skill-item mb-4">
-              <h3 class="fs-6 fw-bold">
-                <img src="img1/css.png" alt="css" align="right" width="25px">CSS</h3>
-            </div>
-            <div class="Skill-item mb-4">
-              <h3 class="fs-6 fw-bold">
-                <img src="img1/bootstrap.png" alt="bootstrap" align="right" width="30px">Bootstrap</h3>
-            </div>
-            <div class="Skill-item mb-4">
-              <h3 class="fs-6 fw-bold " > 
-                <img src="img1/laravel.png" alt="laravel" align="right" width="30px">Laravel 8</h3>
-              
-            </div>
-            <div class="Skill-item mb-4">
-              <h3 class="fs-6 fw-bold">
-                <img src="img1/office.png" alt="office" align="right" width="80px">Microsoft Office operation</h3>
-            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!--Akhir About-->
-    <!--Awal Contact -->
-    <section class="Contact py-5" id="Contact">
-      <div class="container-lg py-4">
-      
-        <div class="row justify-content-center">
-          <div class="col-lg-8" data-aos="fade-down" data-aos-duration="1000"> <!--Animasi AOS-->
-            <div class="section-title text-center">
-              <h2 class="fw-bold mb-5">Contact Me</h2>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000"> <!--Animasi AOS-->
-            <div class="Contact-item d-flex mb-3">
-              <div class="icon fs-4 text-danger">
-                <i class="fas fa-envelope"></i></a>
-              </div>
-              <div class="text ms-3">
-                <h3 class="fs-5 fw-bold">Email</h3>
-                <p>afanfian14@gmail.com</p>
-              </div>
-            </div>
-            <div class="Contact-item d-flex mb-3">
-              <div class="icon fs-4 text-success">
-                <a href="https://wa.me/6289515776243" target="_blank"><i class="fab fa-whatsapp text-success"></i></a>
-              </div>
-              <div class="text ms-3">
-                <h3 class="fs-5 fw-bold">WhatsApp</h3>
-                <p>+6289-515-776-243</p>
-              </div>
-            </div>
-            <div class="Contact-item d-flex mb-3">
-              <div class="icon fs-4 ">
-              <a href="https://www.instagram.com/afanfiann/" target="_blank"><i class="fab fa-instagram text-danger"></i></a>
-              </div>
-              <div class="text ms-3">
-                <h3 class="fs-5 fw-bold">Instagram</h3>
-                <p>@afanfiann</p>
-              </div>
-            </div>
-            <div class="Contact-item d-flex mb-3">
-              <div class="icon fs-4 text-success">
-                <a href="https://www.linkedin.com/in/fianawamirymaulana/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-              </div>
-              <div class="text ms-3">
-                <h3 class="fs-5 fw-bold">Linkedin</h3>
-                <p>Fian Awamiry Maulana</p>
-              </div>
-            </div>
-            <div class="Contact-item d-flex mb-3">
-              <div class="icon fs-4">
-                <a href="https://www.google.co.id/maps/search/Perum+Griyo+Wonorejo+indah+Q.04,+Krajan,+Wonorejo,+Kecamatan+Kedungjajang,+Kabupaten+Lumajang,+Jawa+Timur/@-8.0773088,113.2328504,18z/data=!3m1!4b1" target="_blank"><i class="fas fa-map-marker-alt  text-success" ></i></a>
-              </div>
-              <div class="text ms-3">
-                <h3 class="fs-5 fw-bold">Visit Home</h3>
-                <p>Perumahan Wonorejo Indah Blok Q.04 Rt.40 Rw.15, Kecamatan Kedungjajang, Kabupaten Lumajang, Jawa Timur</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200"> <!--Animasi AOS-->
-            <div>
-              <form class="contact-form" action="https://formsubmit.co/afanfian14@gmail.com" method="POST">
+        <div class="col-md-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+          <!--Animasi AOS-->
+          <div>
+            <form class="contact-form" action="https://formsubmit.co/afanfian14@gmail.com" method="POST">
+              <div class="row">
+                <div class="col-lg-5 mb-4">
+                  <input type="text" name="name" placeholder="Your Name"
+                    class="form-control form-control-lg fs-6 border-0 shadow-sm" required />
+                </div>
+                <input type="hidden" name="_subject" value="New Submissions!">
+                <input type="hidden" name="_next" value="https://afanfian.github.io/thankyou/">
+                <div class="col-lg-5 mb-4">
+                  <input type="email" name="email" placeholder="Your Email"
+                    class="form-control form-control-lg fs-6 border-0 shadow-sm" required />
+                </div>
                 <div class="row">
-                  <div class="col-lg-5 mb-4">
-                    <input type="text" name="name" placeholder="Your Name" class="form-control form-control-lg fs-6 border-0 shadow-sm" required />
-                  </div>
-                  <input type="hidden" name="_subject" value="New Submissions!">
-                  <input type="hidden" name="_next" value="https://afanfian.github.io/thankyou/">
-                  <div class="col-lg-5 mb-4">
-                    <input type="email" name="email" placeholder="Your Email" class="form-control form-control-lg fs-6 border-0 shadow-sm" required />
-                  </div>
-                  <div class="row">
-                    <div class="col-lg-12 mb-4">
-                      <input type="subject" name="subject" placeholder="Subject" class="form-control form-control-lg fs-6 border-0 shadow-sm" required/>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-lg-12 mb-4">
-                      <textarea name="message" placeholder="Message" class="form-control form-control-lg fs-6 border-0 shadow-sm" required></textarea>
-                    </div>
+                  <div class="col-lg-12 mb-4">
+                    <input type="subject" name="subject" placeholder="Subject"
+                      class="form-control form-control-lg fs-6 border-0 shadow-sm" required />
                   </div>
                 </div>
-                <div class="row"> 
-                  <div class="col-lg-12">
-                    <button type="submit" class="btn btn-success px-3">Send Message</button>
+                <div class="row">
+                  <div class="col-lg-12 mb-4">
+                    <textarea name="message" placeholder="Message"
+                      class="form-control form-control-lg fs-6 border-0 shadow-sm" required></textarea>
                   </div>
                 </div>
-              </form>
-            </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                  <button type="submit" class="btn btn-success px-3">Send Message</button>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
-    </section>
-    <!--Akhir Contact-->
-    <!--Awal animasi-->
+    </div>
+  </section>
+  <!--Akhir Contact-->
+  <!--Awal animasi-->
 
-    <!--Akhir animasi-->
-     <!--Awal Footer-->
-      <div class="footer border-top py-4">
-        <div class="container-lg">
-          <div class="row">
-            <div class="col-lg-12">
-              <p class="m-0 text-center fw-bold">&copy; August 2021 Fian Awamiry Maulana </p>
-            </div>
-          </div>
+  <!--Akhir animasi-->
+  <!--Awal Footer-->
+  <div class="footer border-top py-4">
+    <div class="container-lg">
+      <div class="row">
+        <div class="col-lg-12">
+          <p class="m-0 text-center fw-bold">&copy; August 2022 Fian Awamiry Maulana </p>
         </div>
       </div>
-     <!--Akhir Footer-->
-     <!--Awal AOS sebelum js kita-->
-     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-     <script>
-       AOS.init();
-     </script>   
-     <!--Akhir AOS sebelum js kita-->
-   <!--Awal GSAP-->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/TextPlugin.min.js"></script>
-   <script>
-     gsap.registerPlugin(TextPlugin);
-     gsap.to('.lead1', {duration: 2, delay: 2.5, text:'Hello, I am Fian Awamiry Maulana'})
-     gsap.to('.lead2', {duration: 6, delay: 5, text:'from Department of Informatics Engineering Institut Teknologi Sepuluh Nopember, Surabaya (ITS)'})
-     gsap.to('.lead3', {duration: 5, delay: 12, text:'I’m just learning to make a website. My Specialty is Front-end Developer.<span id="dots">...</span><span id="more"> I have diverse set of skills, ranging from design, to HTML+CSS+Javascript, all the way to PHP, and some frameworks like laravel, and bootstrap. I’m working remotely on projects for some start up. Please contact me for any projects and works! &#129309;</span>'})
-   </script>
-    <script > 
-      //navbar GSAP
-        gsap.from('.navbar', {duration: 2.5, y:'-100%', opacity:0, ease:'bounce'})  
-    </script>
-        <script >
-          //navbar GSAP
-            gsap.from('.display-4', {duration: 1.5, x:-50, opacity:0, delay: 0.5, ease:'back'})  
-        </script>
-   <!--Akhir GSAP-->
-   <!--Awal Read More-->
-   <script>
+    </div>
+  </div>
+  <!--Akhir Footer-->
+  <!--Awal AOS sebelum js kita-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!--Akhir AOS sebelum js kita-->
+  <!--Awal GSAP-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/TextPlugin.min.js"></script>
+  <script>
+    gsap.registerPlugin(TextPlugin);
+    gsap.to('.lead1', { duration: 2, delay: 2.5, text: 'Hello, I am Fian Awamiry Maulana' })
+    gsap.to('.lead2', { duration: 6, delay: 5, text: 'from Department of Informatics Engineering Institut Teknologi Sepuluh Nopember, Surabaya (ITS)' })
+    gsap.to('.lead3', { duration: 5, delay: 12, text: 'I’m just learning to make a website. My Specialty is Front-end Developer.<span id="dots">...</span><span id="more"> I have diverse set of skills, ranging from design, to HTML+CSS+Javascript, all the way to PHP, and some frameworks like laravel, and bootstrap. I’m working remotely on projects for some start up. Please contact me for any projects and works! &#129309;</span>' })
+  </script>
+  <script>
+    //navbar GSAP
+    gsap.from('.navbar', { duration: 2.5, y: '-100%', opacity: 0, ease: 'bounce' })  
+  </script>
+  <script>
+    //navbar GSAP
+    gsap.from('.display-4', { duration: 1.5, x: -50, opacity: 0, delay: 0.5, ease: 'back' })  
+  </script>
+  <!--Akhir GSAP-->
+  <!--Awal Read More-->
+  <script>
     function myFunction() {
       var dots = document.getElementById("dots");
       var moreText = document.getElementById("more");
       var btnText = document.getElementById("myBtn");
-    
+
       if (dots.style.display === "none") {
         dots.style.display = "inline";
-        btnText.innerHTML = "Read more"; 
+        btnText.innerHTML = "Read more";
         moreText.style.display = "none";
       } else {
         dots.style.display = "none";
-        btnText.innerHTML = "Read less"; 
+        btnText.innerHTML = "Read less";
         moreText.style.display = "inline";
       }
     }
-    </script>
-   <!--Akhir Read More-->
-     <script src="js/bootstrap.bundle.min.js"></script>
-  </body>
+  </script>
+  <!--Akhir Read More-->
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
