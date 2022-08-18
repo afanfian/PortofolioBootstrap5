@@ -7,10 +7,20 @@ body {
   color: white;
   font-family: 'Poppins', sans-serif;
 }
+
+/* Awal Dark Mode */
+.container .icon:hover{
+  transform: scale(1.1);
+}
+/* AKhir Dark Mode */
+
+/* Awal Navbar */
 nav ul li a:hover {
   box-shadow: 0 0 5px #18d26e, 0 0 5px #18d26e, 0 0 5px #18d26e, 0 0 5px #18d26e;
 }
+/* Akhir Navbar */
 
+/* Awal Home */
 .tengah {
   display: block;
   margin-left: auto;
@@ -22,6 +32,14 @@ img.tengah {
   margin-left: auto;
   margin-right: auto;
 }
+.home-text .button:hover{
+  transform: scale(1.1);
+}
+.home-text .btn:hover{
+  transform: scale(1.1);
+}
+/* Akhir Home */
+
 /* Awal Experience */
 .resume .resume-title {
   font-size: 26px;
@@ -82,18 +100,32 @@ img.tengah {
 }
 /* Akhir Experience */
 
-/* Achievments */
+/* Awal Achievments */
 .Achievments-item {
   text-align: justify;
 }
+/* Akhir Achievments */
 
-/* About */
+/* Akhir About */
 .About-text {
   text-align: justify;
+}
+.col-lg-12 .btn:hover{
+  transform: scale(1.1);
+}
+.btn-about:hover{
+  transform: scale(1.1);
 }
 .p {
   text-align: justify;
 }
+/* Akhir About */
+
+/* Awal Contact */
+.Contact-item .icon:hover{
+  transform: scale(1.1);
+}
+/* Akhir Contact */
 
 /* Animasi Gsap */
 .lead3 {
